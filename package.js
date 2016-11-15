@@ -3,7 +3,7 @@ Package.describe({
   version: '0.0.1',
   summary: "meteor account login token save to cookie",
   // URL to the Git repository containing the source code for this package.
-  git: 'git@github.com:niceilm/meteor-login-token-with-cookie.git',
+  git: 'git@github.com:niceilm/meteor-cookie-login-token.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -22,5 +22,4 @@ Package.onUse(function (api) {
   api.use('webapp', 'server');
   api.addFiles('lib/server.js', 'server');
   api.addFiles('lib/client.js', 'client');
-  api.export('CookieLoginToken');
 });

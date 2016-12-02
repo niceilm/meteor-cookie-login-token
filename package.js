@@ -1,6 +1,6 @@
 Package.describe({
   name: 'flynn:cookie-login-token',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: "meteor account login token save to cookie",
   // URL to the Git repository containing the source code for this package.
   git: 'git@github.com:niceilm/meteor-cookie-login-token.git',
@@ -20,6 +20,8 @@ Package.onUse(function (api) {
   api.use('accounts-base', 'client');
   api.use('http', 'client');
   api.use('webapp', 'server');
+  api.addFiles('lib/common.js');
   api.addFiles('lib/server.js', 'server');
   api.addFiles('lib/client.js', 'client');
+  api.export('CookieLoginToken');
 });
